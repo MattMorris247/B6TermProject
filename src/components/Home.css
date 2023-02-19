@@ -1,0 +1,49 @@
+.home {
+    text-align:center;
+    margin: 0 auto;
+    background-color:grey;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 40px;
+  }
+  
+  .movie-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .movie-card {
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .movie-card {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .movie-card img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .movie-wrapper {
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
