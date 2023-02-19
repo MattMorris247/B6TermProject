@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import AddMovie from "./components/AddMovie";
 import RemoveMovie from "./components/RemoveMovie";
+import MovieDetails from "./components/MovieDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/addmovie' element={<AddMovie/>}/>
         <Route path='/removemovie' element={<RemoveMovie/>}/>
+        <Route path='/moviedetails' element={<MovieDetails/>}/>
       </Routes>
     </div>
   );
