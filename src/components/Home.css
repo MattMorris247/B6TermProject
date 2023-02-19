@@ -1,7 +1,7 @@
 .home {
+    padding-top: 25px;
     text-align:center;
-    margin: 0 auto;
-    background-color:grey;
+    background-color:black;
   }
   
   .h1-home {
@@ -10,6 +10,10 @@
   
   .h2-home {
     margin-top: 40px;
+  }
+
+  h1, h2, p {
+    color: white;
   }
   
   .movie-row {
@@ -23,9 +27,13 @@
     width: 200px;
     margin-bottom: 20px;
     text-align: center;
+    font-size: small;
   }
   
   .movie-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
@@ -34,8 +42,8 @@
   }
 
   .movie-card img {
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    height: 300px;
   }
 
   .movie-wrapper {
@@ -46,4 +54,16 @@
     margin-right: 150px;
     border-radius: 10px;
     overflow: hidden;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+  }
+
+  .button-wrapper button {
+    flex: 1;
+    margin: 0 5px;
   }
