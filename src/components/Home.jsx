@@ -4,7 +4,6 @@ import { useState } from 'react';
 import NavBar from './NavBar'
 import _ from 'lodash'
 import Footer from './Footer.jsx';
-import Header from './Header.jsx';
 
 import './Home.css'; // import CSS file for styling
 
@@ -42,7 +41,7 @@ const Home = () => {
         {movieChunk.map(movie => (
           <div key={movie.id} className="movie-card">
             <img src={movie.posterUrl} alt="Movie Poster" />
-            <h2>{movie.title}</h2>
+            <h2 className="h2-home">{movie.title}</h2>
             <p>Release Date: {movie.releaseDate}</p>
             <button>Book Now</button>
           </div>
@@ -54,12 +53,12 @@ const Home = () => {
   
   return (
     <div className="home">
-      <Header />
-      <h2>Now Showing</h2>
+      <h1 className="h1-home">Movies Now</h1>
+      <h2 className="h2-home">Now Showing</h2>
       <div className="movie-wrapper">
         {renderMovieCards(nowShowingData, 'now-showing')}
       </div>
-      <h2>Coming Soon</h2>
+      <h2 className="h2-home">Coming Soon</h2>
       <div className="movie-wrapper">
         {renderMovieCards(comingSoonData, 'coming-soon')}
       </div>

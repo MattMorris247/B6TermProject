@@ -40,9 +40,9 @@ const SignIn = () => {
 						<br/>
 						<h1 class="ml-36 mt-2 mb-8 text-white">Don't have an account yet? <Link to="/signup" class="text-blue-800">Sign up</Link></h1>
 					</form>
-					<div class="column2-row"></div>
+					<div className="column2-row"></div>
 				</div>
-				<div className="column2-side">Side</div>
+				<div className="column2-side"></div>
 			</div>
 		</div>
 	</div>
