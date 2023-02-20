@@ -1,0 +1,13 @@
+.admin-row {
+	display: flex;
+  }
+  
+  .admin-column {
+	flex: 50%;
+	background-color: black;
+	height: 758px;
+  }
+
+  button {
+    background-color: #1a1a1d;
+  }
