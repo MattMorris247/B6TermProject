@@ -6,15 +6,16 @@ import _ from 'lodash'
 import Footer from './Footer.jsx';
 import './Home.css';
 
+
 const nowShowingData = [
-  { id: 1, title: 'Top Gun: Maverick',  posterUrl: 'https://regalcdn.azureedge.net/REG/BP23TopGunMaverick/HO00013839/TV_SmallPosterImage/20230124-113127845.jpg', trailerUrl: 'https://www.youtube.com/watch?v=qSqVVswa420', bookingUrl:true}, 
-  { id: 2, title: 'Ant-Man and The Wasp Quantumania',  posterUrl: 'https://regalcdn.azureedge.net/REG/AntManandTheWaspQuantumania/HO00011164/TV_SmallPosterImage/20230110-082703606.jpg', trailerUrl: 'https://www.youtube.com/watch?v=ZlNFpri-Y40', bookUrl:true},
-  { id: 3, title: 'Avatar: The Way of Water',  posterUrl: 'https://regalcdn.azureedge.net/REG/BP23AvatarTheWayofWater/HO00013837/TV_SmallPosterImage/20230124-110036249.jpg', trailerUrl: 'https://www.youtube.com/watch?v=d9MyW72ELq0', bookUrl:true },
-  { id: 4, title: 'Puss in Boots: The Last Wish',  posterUrl: 'https://regalcdn.azureedge.net/REG/PussinBootsTheLastWish/HO00011016/TV_SmallPosterImage/20220615-134344011.jpg', trailerUrl: "https://www.youtube.com/watch?v=Y5zqweZAEKI", bookUrl:true},
-  { id: 5, title: 'Everything Everywhere All At Once',  posterUrl: 'https://regalcdn.azureedge.net/REG/BP23EverythingEverywhereAllatOnce/HO00013833/TV_SmallPosterImage/20230124-111609324.jpg', trailerUrl: 'https://www.youtube.com/watch?v=wxN1T1uxQ2g', bookUrl:true },
-  { id: 6, title: 'Titanic 25 Year Anniversary',  posterUrl: 'https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1673365874/amc-cdn/production/2/movies/67500/67480/PosterDynamic/147724.jpg', trailerUrl: 'https://www.youtube.com/watch?v=I7c1etV7D7g', bookUrl:true },
-  { id: 7, title: 'Marlowe', posterUrl: 'https://regalcdn.azureedge.net/REG/Marlowe/HO00013724/TV_SmallPosterImage/20230120-093009393.jpg', trailerUrl: 'https://www.youtube.com/watch?v=jaZnsc5XfrA', bookUrl:true},
-  { id: 8, title: 'A Man Called Otto',  posterUrl: 'https://regalcdn.azureedge.net/REG/ManCalledOttoA/HO00012761/TV_SmallPosterImage/20221020-092601950.jpg', trailerUrl: 'https://www.youtube.com/watch?v=eFYUX9l-m5I', bookUrl:true},
+  { id: 1, title: 'Top Gun: Maverick',  posterUrl: 'https://regalcdn.azureedge.net/REG/BP23TopGunMaverick/HO00013839/TV_SmallPosterImage/20230124-113127845.jpg', trailerUrl: 'https://www.youtube.com/watch?v=qSqVVswa420', nowShowing:true}, 
+  { id: 2, title: 'Ant-Man and The Wasp Quantumania',  posterUrl: 'https://regalcdn.azureedge.net/REG/AntManandTheWaspQuantumania/HO00011164/TV_SmallPosterImage/20230110-082703606.jpg', trailerUrl: 'https://www.youtube.com/watch?v=ZlNFpri-Y40', nowShowing:true},
+  { id: 3, title: 'Avatar: The Way of Water',  posterUrl: 'https://regalcdn.azureedge.net/REG/BP23AvatarTheWayofWater/HO00013837/TV_SmallPosterImage/20230124-110036249.jpg', trailerUrl: 'https://www.youtube.com/watch?v=d9MyW72ELq0', nowShowing:true },
+  { id: 4, title: 'Puss in Boots: The Last Wish',  posterUrl: 'https://regalcdn.azureedge.net/REG/PussinBootsTheLastWish/HO00011016/TV_SmallPosterImage/20220615-134344011.jpg', trailerUrl: "https://www.youtube.com/watch?v=Y5zqweZAEKI", nowShowing:true},
+  { id: 5, title: 'Everything Everywhere All At Once',  posterUrl: 'https://regalcdn.azureedge.net/REG/BP23EverythingEverywhereAllatOnce/HO00013833/TV_SmallPosterImage/20230124-111609324.jpg', trailerUrl: 'https://www.youtube.com/watch?v=wxN1T1uxQ2g', nowShowing:true },
+  { id: 6, title: 'Titanic 25 Year Anniversary',  posterUrl: 'https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1673365874/amc-cdn/production/2/movies/67500/67480/PosterDynamic/147724.jpg', trailerUrl: 'https://www.youtube.com/watch?v=I7c1etV7D7g', nowShowing:true },
+  { id: 7, title: 'Marlowe', posterUrl: 'https://regalcdn.azureedge.net/REG/Marlowe/HO00013724/TV_SmallPosterImage/20230120-093009393.jpg', trailerUrl: 'https://www.youtube.com/watch?v=jaZnsc5XfrA', nowShowing:true},
+  { id: 8, title: 'A Man Called Otto',  posterUrl: 'https://regalcdn.azureedge.net/REG/ManCalledOttoA/HO00012761/TV_SmallPosterImage/20221020-092601950.jpg', trailerUrl: 'https://www.youtube.com/watch?v=eFYUX9l-m5I', nowShowing:true},
 ];
 
 const comingSoonData = [
@@ -45,7 +46,7 @@ const Home = () => {
             <img src={movie.posterUrl} alt="Movie Poster" class="w-200 h-300" />
             <h2 className="h2-home">{movie.title}</h2>
             <div className='button-wrapper'>
-              {movie.bookUrl && <button class="bg-white">Book Now</button>}
+              {movie.nowShowing && <button class="bg-white"><Link to="/booktickets">Book Now</Link></button>}
               <button class="bg-white"  onClick={() => window.open(movie.trailerUrl)}>Trailer</button>
             </div>
           </div>
@@ -53,6 +54,7 @@ const Home = () => {
       </div>
     ));
   };
+
   
 return (
     <div className="home">

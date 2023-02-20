@@ -1,0 +1,126 @@
+.book-tickets {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  .screen {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .seating-area {
+    display: flex;
+  }
+  
+  .seats {
+    flex: 3;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .seat-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .row-label {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .seat-wrapper {
+    flex: 5;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .seat {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+  }
+  
+  .seat.selected {
+    background-color: #f1c40f;
+    color: #fff;
+  }
+  
+  .seat.unavailable {
+    background-color: #ccc;
+    color: #fff;
+    cursor: not-allowed;
+  }
+  
+  .seat-info {
+    flex: 2;
+    margin-left: 20px;
+  }
+  
+  .seat-legend {
+    margin-bottom: 20px;
+  }
+  
+  .legend-item {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .legend-item.available {
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .legend-item.unavailable {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+  }
+  
+  .legend-item.selected {
+    background-color: #f1c40f;
+    border: 1px solid #f1c40f;
+  }
+  
+  .legend-label {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .selected-seats {
+    margin-top: 20px;
+  }
+  
+  .selected-label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .button-wrapper {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .select-seats-btn {
+    background-color: #f1c40f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .select-seats-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
