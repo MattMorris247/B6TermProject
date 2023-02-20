@@ -25,6 +25,7 @@ const comingSoonData = [
 ];
 
 const Home = () => {
+
   const [searchQuery, setSearchQuery] = useState('');
 
   const renderMovieCards = (movies, wrapperClass) => {
@@ -44,7 +45,7 @@ const Home = () => {
             <img src={movie.posterUrl} alt="Movie Poster" class="w-200 h-300" />
             <h2 className="h2-home">{movie.title}</h2>
             <div className='button-wrapper'>
-              {movie.bookUrl && <button class="bg-white" onClick={() => window.open(movie.bookUrl)}>Book Now</button>}
+              {movie.bookUrl && <button class="bg-white">Book Now</button>}
               <button class="bg-white"  onClick={() => window.open(movie.trailerUrl)}>Trailer</button>
             </div>
           </div>

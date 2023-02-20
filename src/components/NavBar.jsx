@@ -9,8 +9,7 @@ function NavBar() {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/signin">Sign In</Link></li>
         <li><Link to="/signup">Sign Up</Link></li>
-		<li><Link to="/addmovie">Add Movie</Link></li>
-		<li><Link to="/removemovie">Remove Movie</Link></li>
+        <li><Link to="/adminpanel">Admin Panel</Link></li>
       </ul>
     </nav>
   );

@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import AddMovie from "./components/AddMovie";
 import RemoveMovie from "./components/RemoveMovie";
+import RegistrationConfirmation from "./components/RegistrationConfirmation";
+import AdminPanel from "./components/AdminPanel";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/addmovie' element={<AddMovie/>}/>
         <Route path='/removemovie' element={<RemoveMovie/>}/>
+        <Route path='/registrationconfirmation' element={<RegistrationConfirmation/>}/>
+        <Route path='/adminpanel' element={<AdminPanel/>}/>
       </Routes>
     </div>
   );
