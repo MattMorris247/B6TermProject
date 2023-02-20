@@ -46,7 +46,7 @@ const Home = () => {
             <img src={movie.posterUrl} alt="Movie Poster" class="w-200 h-300" />
             <h2 className="h2-home">{movie.title}</h2>
             <div className='button-wrapper'>
-              {<movie className="nowShowing"></movie> && <button class="bg-white" onClick={() => window.open(movie.bookUrl)}>Book Now</button>}
+              {movie.nowShowing && <button class="bg-white"><Link to="/booktickets">Book Now</Link></button>}
               <button class="bg-white"  onClick={() => window.open(movie.trailerUrl)}>Trailer</button>
             </div>
           </div>
