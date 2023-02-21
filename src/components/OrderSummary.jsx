@@ -14,7 +14,7 @@ function OrderSummary() {
 
   return (
     <div className="order-summary">
-      <h2>Order Summary</h2>
+      <h2 class="font-bold text-2xl mt-8 text-white">Order Summary</h2>
       <div className="order-details">
       <div className="order-detail">
           <span className="detail-label">Ticket Quantity:</span>
