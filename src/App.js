@@ -13,6 +13,7 @@ import AddPromotion from "./components/AddPromotion";
 import EditProfile from "./components/EditProfile";
 import OrderSummary from "./components/OrderSummary";
 import CheckOut from "./components/CheckOut";
+import OrderConfirmation from "./components/OrderConfirmation";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path='/editprofile' element={<EditProfile/>}/>
         <Route path='/ordersummary' element={<OrderSummary/>}/>
         <Route path='/checkout' element={<CheckOut/>}/>
+        <Route path='/orderconfirmation' element={<OrderConfirmation/>}/>
       </Routes>
     </div>
   );

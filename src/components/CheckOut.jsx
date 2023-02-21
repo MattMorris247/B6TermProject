@@ -1,19 +1,11 @@
 import React from 'react'
 import '../cssfiles/CheckOut.css';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
 const CheckOut = () => {
 
-	const [ticketPrice] = useState(10);
-	const [ticketQuantity, setTicketQuantity] = useState(1);
-	const handleQuantityChange = (event) => {
-	  const quantity = parseInt(event.target.value);
-	  setTicketQuantity(quantity);
-	};
 
-	const orderTotal = ticketPrice * ticketQuantity;
   return (
 
 	<div className="checkout-container">
@@ -22,7 +14,7 @@ const CheckOut = () => {
 			<div className="checkout-column-main">
 
 				<div className="order-summary">
-      				<h2 className="font-bold text-2xl mt-8 text-white">Order Summary</h2>
+      				<h2 class="font-bold text-2xl mt-8 text-white">Order Summary</h2>
       				<div className="order-details">
 					  <div className="order-detail">
           					<span className="detail-label">Ticket Quantity:</span>
@@ -96,13 +88,13 @@ const CheckOut = () => {
 							type="text" 
 							placeholder="Zip/Postal Code"/>							
 					</div>
-								<button class="bg-blue-500 w-40 mt-6 mr-14 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+								<Link to="/"><button class="bg-blue-500 w-40 mt-6 mr-14 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
 									Cancel Order
-								</button>
+								</button></Link>
 
-								<button class="bg-blue-500 w-40 mt-6 ml-96 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+								<Link to="/orderconfirmation"><button class="bg-blue-500 w-40 mt-6 ml-96 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
 									Confirm Order
-								</button>
+								</button></Link>
 				</div>
 				
 

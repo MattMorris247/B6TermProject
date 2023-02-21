@@ -41,7 +41,7 @@ function OrderSummary() {
           <span className="detail-label">Seats:</span>
         </div>
         <Link to="/BookTickets" className="back-button">Back</Link>
-        <button className="checkout-button">Check Out</button>
+        <Link to="/checkout"><button className="checkout-button">Check Out</button></Link>
       </div>
     </div>
   )
