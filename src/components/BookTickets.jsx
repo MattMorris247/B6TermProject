@@ -24,14 +24,33 @@ const BookTickets = () => {
 
   function handleNumChildrenChange(event) {
     setNumChildren(event.target.value);
+    const newValue = event.target.value;
+    if (newValue < 0) {
+      setNumChildren(0);
+    } else {
+      setNumChildren(newValue);
+    }
   }
 
   function handleNumAdultsChange(event) {
     setNumAdults(event.target.value);
+    const newValue = event.target.value;
+    if (newValue < 0) {
+      setNumAdults(0);
+    } else {
+      setNumAdults(newValue);
+    }
   }
 
   function handleNumSeniorsChange(event) {
     setNumSeniors(event.target.value);
+    const newValue = event.target.value;
+    if (newValue < 0) {
+      setNumSeniors(0);
+    } else {
+      setNumSeniors(newValue);
+    }
+    
   }
 
   const handleMovieChange = (event) => {
