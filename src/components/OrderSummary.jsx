@@ -18,7 +18,7 @@ function OrderSummary() {
       <div className="order-details">
       <div className="order-detail">
           <span className="detail-label">Ticket Quantity:</span>
-          <input type="number" min="1" value={ticketQuantity} onChange={handleQuantityChange}/>
+          <input type="number" min="0" value={ticketQuantity} onChange={handleQuantityChange}/>
         </div>
         <div className="order-detail">
           <span className="detail-label">Ticket Price:</span>
