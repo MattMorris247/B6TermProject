@@ -1,0 +1,38 @@
+.order-summary {
+    background-color: #1a1a1d;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .order-summary h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .order-details {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .order-detail {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .checkout-button {
+    background-color: #f1c40f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  

@@ -24,38 +24,19 @@ const BookTickets = () => {
 
   function handleNumChildrenChange(event) {
     setNumChildren(event.target.value);
-    const newValue = event.target.value;
-    if (newValue < 0) {
-      setNumChildren(0);
-    } else {
-      setNumChildren(newValue);
-    }
   }
 
   function handleNumAdultsChange(event) {
     setNumAdults(event.target.value);
-    const newValue = event.target.value;
-    if (newValue < 0) {
-      setNumAdults(0);
-    } else {
-      setNumAdults(newValue);
-    }
   }
 
   function handleNumSeniorsChange(event) {
     setNumSeniors(event.target.value);
-    const newValue = event.target.value;
-    if (newValue < 0) {
-      setNumSeniors(0);
-    } else {
-      setNumSeniors(newValue);
-    }
-    
   }
 
   const handleMovieChange = (event) => {
     setSelectedMovie(event.target.value);
-  };
+  }
 
   const renderSeat = (seat) => {
     const isSelected = selectedSeats.includes(seat);
@@ -108,17 +89,17 @@ const BookTickets = () => {
       <div>
       <label>
         Children:
-        <input class="bg-#1a1a1d" type="number" value={numChildren} onChange={handleNumChildrenChange} />
+        <input class="bg-#1a1a1d" type="number" min="0" value={numChildren} onChange={handleNumChildrenChange} />
       </label>
       <br />
       <label>
         Adults: 
-        <input class="bg-#1a1a1d" type="number" value={numAdults} onChange={handleNumAdultsChange} />
+        <input class="bg-#1a1a1d" type="number" min="0" value={numAdults} onChange={handleNumAdultsChange} />
       </label>
       <br />
       <label>
         Seniors: 
-        <input class="bg-#1a1a1d" type="number" value={numSeniors} onChange={handleNumSeniorsChange} />
+        <input class="bg-#1a1a1d" type="number" min="0" value={numSeniors} onChange={handleNumSeniorsChange} />
       </label>
     </div>
       <div className="screen">Screen</div>
