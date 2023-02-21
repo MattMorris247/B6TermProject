@@ -86,7 +86,29 @@ const CheckOut = () => {
 							<input class="shadow appearance-none border rounded h-12 text-white w-3/12 py-2 px-2 -ml-2 mr-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
 							id="zipcode" 
 							type="text" 
-							placeholder="Zip/Postal Code"/>							
+							placeholder="Zip/Postal Code"/>		
+
+							<h1 class="font-bold text-lg mt-10 mb-4">Billing Address</h1>	
+
+							<input class="shadow appearance-none border rounded text-white w-9/12 py-2 px-2 mr-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+							id="address" 
+							type="text" 
+							placeholder="Street Address*"/>
+
+							<input class="shadow appearance-none border rounded text-white w-3/12 py-2 px-2 mr-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+							id="city" 
+							type="text" 
+							placeholder="City*"/>
+
+							<input class="shadow appearance-none border rounded text-white w-3/12 py-2 px-2 -ml-2 mr-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+							id="state" 
+							type="text" 
+							placeholder="State*"/>
+
+							<input class="shadow appearance-none border rounded text-white w-3/12 py-2 px-2 -ml-2 mr-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+							id="addresszip" 
+							type="text" 
+							placeholder="Zip/Postal Code*"/>				
 					</div>
 								<Link to="/"><button class="bg-blue-500 w-40 mt-6 mr-14 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
 									Cancel Order
