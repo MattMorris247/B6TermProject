@@ -21,6 +21,9 @@ function OrderSummary() {
       <h2 className="font-bold text-2xl mt-8 text-white">Order Summary</h2>
       <div className="order-details">
       <div className="order-detail">
+          <span className="detail-label">Movie:</span>
+        </div>
+      <div className="order-detail">
           <span className="detail-label">Ticket Price:</span>
           <span className="detail-value">${ticketPrice}</span>
         </div>
