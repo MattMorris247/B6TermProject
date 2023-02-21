@@ -48,4 +48,31 @@
     margin-right: 10px;
   }
   
+  .quantity-input button {
+    font-size: 1.2rem;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #333;
+    cursor: pointer;
+  }
   
+  .quantity-input button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .quantity-input input {
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 1.2rem;
+    width: 50px;
+    text-align: center;
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
