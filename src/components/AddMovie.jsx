@@ -12,32 +12,32 @@ const AddMovie = () => {
 
           <form>
             <h1 class="font-bold text-lg mt-8 ml-16 text-white">Movie title</h1>
-            <input class="shadow appearance-none border rounded text-white ml-16 w-72 py-2 px-2 my-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            <input class="shadow appearance-none border rounded text-white ml-16 w-72 py-2 px-2 my-3 leading-tight focus:outline-none focus:shadow-outline"
             id="movietitle"
             type="text"
-            placeholder="Movie Title"
+            placeholder=""
             />
 
             <h1 class="font-bold text-lg mt-5 ml-16 text-white">Date</h1>
-            <input class="shadow appearance-none border rounded text-white ml-16 w-72 py-2 px-2 my-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            <input class="shadow appearance-none border rounded text-white ml-16 w-72 py-2 px-2 my-3 leading-tight focus:outline-none focus:shadow-outline"
             type="date" 
             id="showdate" 
-            name="birthday"/>
+            name="date"/>
             
             <br/>
             <h1 class="font-bold text-lg mt-5 ml-16 text-white">Room Number</h1>
-            <input class="shadow appearance-none border rounded ml-16 w-72 py-2 px-2 my-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="movietitle"
+            <input class="shadow appearance-none border rounded ml-16 w-72 py-2 px-2 my-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+            id="roomnumber"
             type="text"
-            placeholder="Movie Title"
+            placeholder=""
             />
 
             <br/>
             <h1 class="font-bold text-lg mt-5 ml-16 text-white">Movie Link</h1>
-            <input class="shadow appearance-none border rounded ml-16 w-72 py-2 px-2 my-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="movietitle"
+            <input class="shadow appearance-none border rounded ml-16 w-72 py-2 px-2 my-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+            id="movielink"
             type="text"
-            placeholder="Movie Title"
+            placeholder=""
             />
 
             <br/>

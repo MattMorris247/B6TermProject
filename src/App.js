@@ -9,6 +9,7 @@ import RemoveMovie from "./components/RemoveMovie";
 import BookTickets from "./components/BookTickets";
 import RegistrationConfirmation from "./components/RegistrationConfirmation";
 import AdminPanel from "./components/AdminPanel";
+import AddPromotion from "./components/AddPromotion";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/booktickets' element={<BookTickets/>}/>
         <Route path='/registrationconfirmation' element={<RegistrationConfirmation/>}/>
         <Route path='/adminpanel' element={<AdminPanel/>}/>
+        <Route path='/addpromotion' element={<AddPromotion/>}/>
       </Routes>
     </div>
   );
