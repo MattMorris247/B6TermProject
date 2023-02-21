@@ -5,12 +5,12 @@ const EditProfile = () => {
   return (
 	<div className="editprofile-container">
 		<div className="editprofile-row">
-			<div className="editprofile-column-side">side</div>
-			<div class="bg-black">
+			<div className="editprofile-column-side"></div>
+			<div className="bg-black">
 				<div className="editprofile-column-main">
-					<h1 class="font-bold text-2xl mt-8 ml-64 text-white">Edit Profile</h1>
+					<h1 className="font-bold text-2xl mt-8 ml-64 text-white">Edit Profile</h1>
 
-						<div class="editprofile-column-row">
+						<div className="editprofile-column-row">
 								<h1 class="font-bold text-xl mt-10 ml-20 text-white">Profile Details</h1>
 								<h1 class="font-bold text-xl mt-10 ml-48 text-white">Change Password</h1>
 
@@ -37,7 +37,7 @@ const EditProfile = () => {
 								/>
 
 						</div>
-						<div class="editprofile-column-row">
+						<div className="editprofile-column-row">
 								<h1 class="font-bold text-xl mt-10 ml-20 text-white">Manage Payment Details</h1>
 								<h1 class="font-bold text-xl mt-10 ml-20 text-white">Manage Address Details</h1>
 								<br/>
@@ -49,9 +49,15 @@ const EditProfile = () => {
 									Address
 								</button>
 						</div>
+						<div className="editprofile-column-row">
+							<button type="button" 
+                			class="text-white bg-gray-800 w-6/12 mt-10 ml-44 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+                    		Save Changes
+                			</button>
+						</div>
 				</div>
 			</div>
-			<div className="editprofile-column-side">side</div>
+			<div className="editprofile-column-side"></div>
 		</div>
 	</div>
   )
