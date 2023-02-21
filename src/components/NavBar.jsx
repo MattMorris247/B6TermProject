@@ -10,6 +10,7 @@ function NavBar() {
         <li><Link to="/signin">Sign In</Link></li>
         <li><Link to="/signup">Sign Up</Link></li>
         <li><Link to="/adminpanel">Admin Panel</Link></li>
+        <li><Link to="/editprofile">Edit Profile</Link></li>
       </ul>
     </nav>
   );

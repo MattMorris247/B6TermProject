@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './BookTickets.css';
+import { Link } from 'react-router-dom';
 
 const BookTickets = () => {
   const [selectedSeats, setSelectedSeats] = useState([]);
@@ -103,7 +104,7 @@ const BookTickets = () => {
         </div>
       </div>
       <div className="button-wrapper">
-        <button className="select-seats-btn" disabled={selectedSeats.length === 0}>Select Seats</button>
+        <Link to="/ordersummary"><button className="select-seats-btn" disabled={selectedSeats.length === 0}>Select Seats</button></Link>
       </div>
     </div>
   );
