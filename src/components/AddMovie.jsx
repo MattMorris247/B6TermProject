@@ -5,7 +5,7 @@ const AddMovie = () => {
   return (
     <div className="addmovie-container">
       <div className="addmovie-row">
-        <div className="addmovie-column-side">side</div>
+        <div className="addmovie-column-side"></div>
         <div class="bg-black">
         <div className="addmovie-column-main">
           <h1 class="font-bold text-2xl mt-6 text-white text-center">Add Movie</h1>
@@ -53,7 +53,7 @@ const AddMovie = () => {
 
         </div>
         </div>
-        <div className="addmovie-column-side">side</div>
+        <div className="addmovie-column-side"></div>
       </div>
     </div>
   )
