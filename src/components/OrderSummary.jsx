@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./OrderSummary.css";
+import { Link } from 'react-router-dom';
 
 function OrderSummary() {
   const [ticketPrice] = useState(10);
@@ -14,9 +15,9 @@ function OrderSummary() {
 
   return (
     <div className="order-summary">
-      <h2 class="font-bold text-2xl mt-8 text-white">Order Summary</h2>
+      <h2 className="font-bold text-2xl mt-8 text-white">Order Summary</h2>
       <div className="order-details">
-      <div className="order-detail">
+        <div className="order-detail">
           <span className="detail-label">Ticket Quantity:</span>
           <input type="number" min="0" value={ticketQuantity} onChange={handleQuantityChange}/>
         </div>
@@ -28,10 +29,11 @@ function OrderSummary() {
           <span className="detail-label">Order Total:</span>
           <span className="detail-value">${orderTotal}</span>
         </div>
+        <Link to="/BookTickets" className="back-button">Back</Link>
         <button className="checkout-button">Check Out</button>
       </div>
     </div>
-  );
-}
+  )
+  }
 
 export default OrderSummary;
