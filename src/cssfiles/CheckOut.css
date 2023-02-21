@@ -1,0 +1,43 @@
+.checkout-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .checkout-column-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 34px;
+    background-color: black;
+  }
+
+  .checkout-column-side {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: .9;
+	height: 758px;
+    background-color: black;
+  }
+  .checkout-column-main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    background-color: #1a1a1d;
+	border-radius: 10px;
+	height: 530px;
+	width: 440px;
+	margin-top: 20px;
+  }
+
+  .checkout-container {
+    margin: 0px;
+  }
+
+  input {
+    background-color: #1a1a1d;
+  }

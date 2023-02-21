@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
-import NavBar from './NavBar'
 import _ from 'lodash'
 import Footer from './Footer.jsx';
 import './Home.css';

@@ -12,6 +12,7 @@ import AdminPanel from "./components/AdminPanel";
 import AddPromotion from "./components/AddPromotion";
 import EditProfile from "./components/EditProfile";
 import OrderSummary from "./components/OrderSummary";
+import CheckOut from "./components/CheckOut";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path='/addpromotion' element={<AddPromotion/>}/>
         <Route path='/editprofile' element={<EditProfile/>}/>
         <Route path='/ordersummary' element={<OrderSummary/>}/>
+        <Route path='/checkout' element={<CheckOut/>}/>
       </Routes>
     </div>
   );

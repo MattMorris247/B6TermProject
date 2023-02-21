@@ -5,7 +5,7 @@ const AddPromotion = () => {
   return (
 	<div className="addpromotion-container">
       <div className="addpromotion-row">
-        <div className="addpromotion-column-side">side</div>
+        <div className="addpromotion-column-side"></div>
         <div class="bg-black">
         <div className="addpromotion-column-main">
           <h1 class="font-bold text-2xl mt-6 text-white text-center">Add Promotion</h1>
@@ -41,7 +41,7 @@ const AddPromotion = () => {
           </form>
         </div>
         </div>
-        <div className="addpromotion-column-side">side</div>
+        <div className="addpromotion-column-side"></div>
       </div>
     </div>
   )
