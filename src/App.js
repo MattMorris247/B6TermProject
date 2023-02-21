@@ -10,6 +10,8 @@ import BookTickets from "./components/BookTickets";
 import RegistrationConfirmation from "./components/RegistrationConfirmation";
 import AdminPanel from "./components/AdminPanel";
 import AddPromotion from "./components/AddPromotion";
+import EditProfile from "./components/EditProfile";
+import OrderSummary from "./components/OrderSummary";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Route path='/registrationconfirmation' element={<RegistrationConfirmation/>}/>
         <Route path='/adminpanel' element={<AdminPanel/>}/>
         <Route path='/addpromotion' element={<AddPromotion/>}/>
+        <Route path='/editprofile' element={<EditProfile/>}/>
+        <Route path='/ordersummary' element={<OrderSummary/>}/>
       </Routes>
     </div>
   );
